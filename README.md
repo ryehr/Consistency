@@ -17,3 +17,10 @@ This repository is the proof-of-concept code of the paper entitled "Addressing G
 ├── Watermark_logits.py                         # Code for logit-based watermarking schemes
 └── Watermark_sample.py                         # Code for sampling-based watermarking schemes
 ```
+
+### Quick Usage 1
+python Steganography_AC.py --disambiguation 'Basic' --top_k 128 --model_index 0 --sample_num 200
+### Quick Usage 2
+python Watermark_logits.py  --model_index 0 --glitch_period 2 --green_priority 2.0 --hash_window 1 --sample_num 200
+### Quick Usage 3
+python Steganography_sample.py --model_index 0 --glitch_period 2  --sample_num 500
